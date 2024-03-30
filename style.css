@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body * {
+    box-sizing: border-box;
+}
+.main-login{
+    align-items: center;
+    background-color: #201b2c;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.left{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 50vw;
+}
+.left > h1 {
+    font-size: 3vw;
+    color: #77ffc0;
+}
+.animation-login{
+    width: 35vw;
+}
+
+.right{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 50vw;
+}
+.card{
+    align-items: center;
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #00000056;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 35px;
+    width: 60%;
+}
+.card > h2 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+    width: 100%;
+}
+.textfield > input{
+    background-color: #514869;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #00000056;
+    color: #f0ffffde;
+    font-size: 12pt;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder{
+    color: #f0ffff94;
+}
+.btn-login{
+    background-color: #00ff88;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    color: #2b134b;
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 25px;
+    outline: none;
+    padding: 16px 0px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.btn-login:hover{
+    transition: 0.3s cubic-bezier(0.37, 0, 0.63, 1);
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 950px){
+    .card{ width: 85%; }
+}
+@media only screen and (max-width: 600px){
+    .main-login { 
+        flex-direction: column;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+    }
+    .animation-login{
+        width: 50vw;
+    }
+    .left{
+        width: 100%;
+        height: auto;
+    }
+    .left > h1 {
+        display: none;
+    }
+    .card{
+        width: 90%;
+    }
+}
